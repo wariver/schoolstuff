@@ -22,16 +22,11 @@ public class EuclidGCDCalsulator {
     }
     private static int EuclidGCDMethod(int m, int n){
         int r = 0;
-        if (n%m == 0)
-            return m;
-        else {
             while (n % m != 0) {
                 r = n % m;
                 n = m;
                 m = r;
             }
             return m;
-        }
-
     }
 }
